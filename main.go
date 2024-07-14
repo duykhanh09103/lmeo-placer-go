@@ -16,9 +16,9 @@ import (
 
 var placePngUrl = "https://foloplace.tobycm.dev/place.png"
 var wsUrl = "wss://foloplace.tobycm.dev/ws"
-var imagePath = "./elysia.png"
+var imagePath = "./image.png"
 
-var offset = [2]int{800, 800} // starting point, [x, y]
+var offset = [2]int{0, 500} // starting point, [x, y]
 
 func getPlacePng(url string) (*image.Image, error) {
 	response, err := http.Get(url)
